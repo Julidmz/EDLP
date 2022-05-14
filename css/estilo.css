@@ -6,7 +6,8 @@
 }
 
 body{background-color: #f7a6b5;
-     height: 50%;
+     width: 98vw ;
+     height: 50vw;
      padding: 10px;
 }
 
@@ -15,9 +16,12 @@ body{background-color: #f7a6b5;
 h1{ color: rgb(255, 255, 255);
     text-align: center;
     font-size: 350%;
+    display: flex;
+    justify-content: center;
 }
 
-header  {background-color:  rgb(190, 100, 100)}
+header  {background-color:  rgb(190, 100, 100);
+}
 
 .header_superior {
     max-width: 1200px;
@@ -28,7 +32,7 @@ header  {background-color:  rgb(190, 100, 100)}
     padding: 1px;
 }
 .logo img {
-    width: 100px;
+    width: 15vh;
     border-radius: 100%;
     padding: 5%;
     border: 2px solid black;  
@@ -71,6 +75,9 @@ nav > ul > li > a {
     text-transform: uppercase;
     font-size: 15px;
     transition: all 300ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 nav > ul > li > a:hover {
     transform: scale(1.1);
@@ -134,59 +141,71 @@ nav ul li ul a:hover{
 
 h2{ color: firebrick;
     background-color: rgb(248, 200, 110);
-    font-size: 35px;
+    font-size: 2em;
+    margin: 1rem;
     text-decoration:underline;
     text-align: center;
-    height: 60px;
- }
+    height: 5vw;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
 
 /*section*/
 
-section { background-color: rgb(248, 165, 105);
+section { 
+    background-color: rgb(248, 165, 105);
     width: 80%;
     float: left;
     margin: 1%;
     padding: 10px;
     border: 3px solid black;
     box-sizing: border-box;
-    height: 600px;
+    height: 100vw;
     overflow: scroll;
 }
-
-h3{ font-size: 29px;
+h3{ font-size: 2em;
     text-align: center;
-    text-decoration:underline}
-
+    text-decoration:underline;
+    display: flex;
+    justify-content: center;
+}
 .contenido {
     color: rgb(255, 255, 255);
     font-size: 18px;
+    margin: 1rem;
     border-radius: 1%;
-    border: 5px solid black;}
-
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
 .contenido:hover {
     background-color: rgb(165, 140, 108);
     border-radius: 1%;
     border: 5px solid black;
-
 }
-
 .humita {
-    width: 50%;
+    width: 50vw;
     padding: 1%;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-around;
 }
 .humita:hover {
     border-radius: 100%;
     border: 2px solid black;    
 }             
-
 b { font-size: 20px; 
-    text-decoration: underline;}
-
+    text-decoration: underline;
+    margin: 1rem;
+}
 ul{ color: rgb(255, 255, 255);
+    margin: 1rem;
     font-size: 17px;
     text-align: left;
-    list-style: none;}
-
+    list-style: none;
+}
 section ul {
     border-radius: 1%;
     border: 5px solid black;
@@ -194,20 +213,31 @@ section ul {
 section ul li:hover {
     background-color: rgb(165, 140, 108);
     border-radius: 1%;
-    border: 5px solid black;}
+    border: 5px solid black;
+}
 
 ol{ color: rgb(255, 255, 255);
+    margin: 1rem;
     font-size: 17px;
-    list-style: none;}
-
+    list-style: none;
+}
 section ol {
     border-radius: 1%;
-    border: 5px solid black;}
-
+    border: 5px solid black;
+}
 section ol li:hover {
     background-color: rgb(165, 140, 108);
     border-radius: 1%;
-    border: 5px solid black;}
+    border: 5px solid black;
+}
+iframe {
+    border-radius: 1%;
+    border: 5px solid black;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /*aside*/
 
@@ -218,7 +248,7 @@ aside   { background-color: rgb(248, 165, 10);
     padding: 10px;
     border: 3px dotted black;
     box-sizing: border-box;
-    height: 600px;
+    height: 100vw;
     overflow: scroll;
 }
 
@@ -231,14 +261,12 @@ footer {
     margin-top: 2px;
     line-height: 20px;
 }
-
 .redes_sociales {
-    display: flex;
     height: 20vh;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
 }
-
 .redes_sociales ul li {
     display: inline-block;
     margin: 0 5px;
@@ -246,7 +274,6 @@ footer {
     height: 60px;
     text-align: center;
 }
-
 .redes_sociales ul li a {
     display: block;
     padding: 0 10px;
@@ -257,7 +284,6 @@ footer {
     box-shadow: 0 3px 0px rgba(0,0,0,.2);
     transition: -2s;
 }
-
 .redes_sociales ul:hover a {
     filter: blur(2px);
 }
@@ -275,6 +301,7 @@ footer {
 }
 
 /*formulario*/
+
 h4  {
     font-size: 22px;
     margin-bottom: 20px;
@@ -290,7 +317,6 @@ form {
     font-family:'calibri';
     color: white;
 }
-
 input {
     width: 100%;
     background: #ffffff;
@@ -301,7 +327,6 @@ input {
     font-family:'calibri';
     font: 18px;
 }
-
 label {
     width: 100%;
     background: #24303c;
