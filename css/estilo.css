@@ -10,17 +10,37 @@ body{background-color: #f7a6b5;
      height: 50vw;
      padding: 10px;
 }
+@media (max-width: 600px){
+    body{
+        background:rgb(233, 146, 255);
+    }
+}
 
 /*header superior*/
 
 h1{ color: rgb(255, 255, 255);
+    font-family: 'Libre Baskerville', serif;
     text-align: center;
-    font-size: 350%;
+    font-size: 380%;
     display: flex;
     justify-content: center;
 }
-
+@media (max-width: 600px){
+    h1{
+        background:rgb(10, 15, 13);
+    }
+}
+@media (max-width: 600px){
+    input{
+        display: none;
+    }
+}
 header  {background-color:  rgb(190, 100, 100);
+}
+@media (max-width: 600px){
+    header{
+        background:rgb(43, 80, 65);
+    }
 }
 
 .header_superior {
@@ -37,6 +57,11 @@ header  {background-color:  rgb(190, 100, 100);
     padding: 5%;
     border: 2px solid black;  
 }
+@media (max-width: 600px){
+    .logo img{
+        display: none;
+    }
+}
 .buscador input {
     width: 200px;
     padding: 10px;
@@ -52,6 +77,14 @@ header  {background-color:  rgb(190, 100, 100);
     max-width: 1200px;
     margin: auto;
     height: 100%;           
+}
+@media (max-width: 600px){
+    .menu{
+        background:rgb(43, 80, 65);
+        display: flex;
+        align-items:flex-start;
+        justify-content:first baseline;
+    }
 }
 nav   {
     height: 100%;           
@@ -75,9 +108,6 @@ nav > ul > li > a {
     text-transform: uppercase;
     font-size: 15px;
     transition: all 300ms ease;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 nav > ul > li > a:hover {
     transform: scale(1.1);
@@ -101,6 +131,13 @@ nav ul li ul {
     opacity: 0;
     z-index: 10;
     transition: all 300ms ease;   
+}
+@media (max-width: 600px){
+    nav ul li ul{
+        display: flex;
+        align-items:flex-start;
+        justify-content:first baseline;
+    }
 }
 nav ul li:hover ul{
     visibility: visible;
@@ -139,16 +176,39 @@ nav ul li ul a:hover{
 
 /*main*/
 
+@media (max-width: 600px){
+    main{
+        background:rgb(10, 15, 13);
+        display: none;
+    }
+}
+main {
+    height: 20vw;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+@media (min-width: 600px){
+    .logoplatocriollo{
+        display: none;
+    }
+}
 h2{ color: firebrick;
-    background-color: rgb(248, 200, 110);
-    font-size: 2em;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 320%;
     margin: 1rem;
     text-decoration:underline;
     text-align: center;
-    height: 5vw;
+    height: 100vw;
     display: flex;
     align-items:center;
-    justify-content: space-around;
+    justify-content:space-around;
+}
+@media (max-width: 600px){
+    h2{
+        display: none;
+    }
 }
 
 /*section*/
@@ -164,7 +224,13 @@ section {
     height: 100vw;
     overflow: scroll;
 }
+@media (max-width: 600px){
+    section{
+        background:rgb(43, 80, 65);
+    }
+}
 h3{ font-size: 2em;
+    font-family: 'Libre Baskerville', serif;
     text-align: center;
     text-decoration:underline;
     display: flex;
@@ -197,12 +263,13 @@ h3{ font-size: 2em;
     border: 2px solid black;    
 }             
 b { font-size: 20px; 
+    font-family: 'Libre Baskerville', serif;
     text-decoration: underline;
     margin: 1rem;
 }
 ul{ color: rgb(255, 255, 255);
     margin: 1rem;
-    font-size: 17px;
+    font-size: 16px;
     text-align: left;
     list-style: none;
 }
@@ -218,7 +285,7 @@ section ul li:hover {
 
 ol{ color: rgb(255, 255, 255);
     margin: 1rem;
-    font-size: 17px;
+    font-size: 16px;
     list-style: none;
 }
 section ol {
@@ -251,6 +318,11 @@ aside   { background-color: rgb(248, 165, 10);
     height: 100vw;
     overflow: scroll;
 }
+@media (max-width: 600px){
+    aside{
+        background:rgb(10, 15, 13);
+    }
+}
 
 /*footer*/
 
@@ -260,6 +332,11 @@ footer {
     height: 100px;
     margin-top: 2px;
     line-height: 20px;
+}
+@media (max-width: 600px){
+    footer{
+        background:rgb(10, 15, 13);
+    }
 }
 .redes_sociales {
     height: 20vh;
@@ -348,6 +425,7 @@ textarea {
     font-family:'calibri';
     font: 18px;
 }
+
 
 
 
